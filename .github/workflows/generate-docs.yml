@@ -1,0 +1,19 @@
+name: Generate RM GSMA Docs
+
+on:
+  push:
+    branches:
+      - main  # Adjust branch name if needed
+
+jobs:
+  generate_docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Document Generation Script
+        run: |
+          chmod +x generate_docs.sh
+          ./generate_docs.sh
