@@ -3,7 +3,7 @@ name: Generate RM GSMA Docs
 on:
   push:
     branches:
-      - main  # Adjust branch name if needed
+      - main  
 
 jobs:
   generate_docs:
